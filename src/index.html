@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">
+        To Do list
+      </h1>
+      <div class="header__wrapperCount">
+        <div class="header__item-count">
+          <div class="header__item-count-text">Scope</div>
+          <div class="header__item-count-number">15</div>
+        </div>
+        <div class="header__item-count">
+          <div class="header__item-count-text">Active</div>
+          <div class="header__item-count-number">8</div>
+        </div>
+        <div class="header__item-count">
+          <div class="header__item-count-text">Successful</div>
+          <div class="header__item-count-number">7</div>
+        </div>
+      </div>
+      <button class="header__add-button">
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="todo">
+      <div class="container">
+        <form class="todo__form">
+          <div class="todo__wrapper-form">
+            <div class="todo__wrapper-checked-btn">
+              <div class="todo__checked-wrapper">
+                <input class="todo__checked" name="checkbox" type="checkbox">
+                <span class="todo__date-create-todo">3 Jan 2021</span>
+              </div>
+              <div class="todo__wrapper-btn">
+                <button class="btn todo__btn-edit "></button>
+                <button class="btn todo__btn-remove"></button>
+              </div>
+            </div>
+            <div class="todo__input-text">
+              <input type="text" placeholder="Please enter task description">
+            </div>
+          </div>
+
+          <button class="todo__create-task-btn">
+            Create new task
+          </button>
+        </form>
+          
+      </div>
+    
+    </section>
+      
+  </main>
+</body>
+</html>

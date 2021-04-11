@@ -1,0 +1,79 @@
+.todo {
+  padding: 88px 0 40px;
+
+  &__form {
+
+  }
+
+  &__wrapper-form {
+    margin-bottom: 26px;
+  }
+
+  &__wrapper-checked-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__checked-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__checked {
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+    // border: 1px solid #889DEA;
+    // outline: none;
+    // border: none;
+  }
+
+  &__date-create-todo {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #889DEA;
+  }
+  &__wrapper-btn {
+    margin-right: 27px;
+  }
+
+  &__btn-edit {
+    background-image: url('../icons/icon-edit.svg');
+  }
+  &__btn-remove {
+    background-image: url('../icons/icon-remove.svg');
+    margin-left: 8px;
+  }
+
+  &__input-text {
+    width: 512px;
+    // margin-left: 26px;
+    margin-top: 10px;
+
+    input {
+      width: 100%;
+      padding: 8px 0 8px 26px;
+      border: 1px solid #C7C7C7;
+      outline: none;
+      &:focus {
+        border: 1px solid #889DEA;
+      }
+    }
+  }
+  &__create-task-btn {
+    width: 208px;
+    height: 48px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFF;
+    background-color: #88EAA9;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+  }
+}
