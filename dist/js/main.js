@@ -65,6 +65,11 @@ window.addEventListener('load', () => {
 
     const edit = () => {
       newItem.classList.add(editClassName);
+      const textarea =  newItem.querySelector('textarea');
+      const textareaVal = textarea.value;
+      textarea.value = '';
+      newItem.querySelector('textarea').focus();
+      textarea.value = textareaVal;
     };
 
     const save = () => {
