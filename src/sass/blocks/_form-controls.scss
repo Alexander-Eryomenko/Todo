@@ -1,0 +1,44 @@
+.checkbox {
+  margin: 0 10px 0 0;
+
+  &__input {
+    display: none;
+  }
+
+  &__body {
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #889dea;
+    border-radius: 2px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../icons/check.svg) no-repeat 50% 50%;
+    }
+  }
+
+  &__input:checked + &__body {
+    background: #889dea;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  border: 0;
+  font: inherit;
+  outline: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

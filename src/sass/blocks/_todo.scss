@@ -2,11 +2,52 @@
   padding: 88px 0 40px;
 
   &__form {
-
+    border-top: 1px solid #BBBBBB;
   }
 
   &__wrapper-form {
     margin-bottom: 26px;
+    border-bottom: 1px solid #BBBBBB;
+    padding: 16px 0 8px;
+
+    .todo__text {
+      display: block;
+
+      &.strike {
+        text-decoration: line-through;
+      }
+    }
+    
+    textarea {
+      width: 100%;
+      display: none;
+    }
+
+    .edit-icon {
+      display: block;
+    }
+
+    .save-icon {
+      display: none;
+    }
+
+    &.editing {
+      .todo__text {
+        display: none;
+      }
+
+      .edit-icon {
+        display: none;
+      }
+
+      .save-icon {
+        display: block;
+      }
+
+      textarea {
+        display: block;
+      }
+    }
   }
 
   &__wrapper-checked-btn {
@@ -38,13 +79,33 @@
   }
   &__wrapper-btn {
     margin-right: 27px;
+    display: flex;
+    align-items: center;
+
+    button {
+      background: none;
+      border: 0;
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+
+      &:hover {
+        svg {
+          path {
+            stroke: #889DEA;
+          }
+        }
+      }
+
+      svg {
+        path {
+          stroke: #AFAFAF;
+        }
+      }
+    }
   }
 
-  &__btn-edit {
-    background-image: url('../icons/icon-edit.svg');
-  }
   &__btn-remove {
-    background-image: url('../icons/icon-remove.svg');
     margin-left: 8px;
   }
 

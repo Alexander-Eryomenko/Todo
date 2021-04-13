@@ -20,23 +20,35 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     text-align: center;
+  }
 
+  .start {
+    justify-self: start;
+  }
+  .center {
+    justify-self: center;
+  }
+  .end {
+    justify-self: end;
   }
 
   &__item-count {
     color: #FEFEFE;
+    
   }
 
   &__item-count-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    
   }
 
   &__item-count-number {
     font-weight: 600;
     font-size: 56px;
     line-height: 56px;
+    
   }
 
   &__add-button {
@@ -85,5 +97,13 @@
     &:after {
       transform: rotate(45deg);
     }
+  }
+  &__subtract {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url('../icons/subtract.svg');
+    top: 100%;
+    left: 0;
   }
 }
