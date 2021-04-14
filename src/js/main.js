@@ -60,7 +60,7 @@ window.addEventListener('load', () => {
 
     const editClassName = 'editing';
     const currentDataBase = getDataBase();
-    const savingItem = currentDataBase.find(item => item.Id === itemData.Id);
+    // const savingItem = currentDataBase.find(item => item.Id === itemData.Id);
     const itemIndex = currentDataBase.findIndex(item => item.Id === itemData.Id);
 
     const edit = () => {
